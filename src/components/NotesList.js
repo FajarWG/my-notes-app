@@ -1,22 +1,20 @@
 import React from "react";
 import NotesItem from "./NotesItem";
 
-function NotesList({ notes, onDelete, onArchive }) {
-  const noteList = notes.filter((note) => note.archived === false);
-
+const NotesList = ({ setNotes, notes }) => {
   return (
-    <div className="note-list">
-      {noteList.map((note) => (
-        <NotesItem
-          key={note.id}
-          id={note.id}
-          onArchive={onArchive}
-          onDelete={onDelete}
-          {...note}
-        />
-      ))}
+    <div>
+      {notes.length === 0 ? (
+        <p style={{ textAlign: "center" }}>Tidak ada catatan.</p>
+      ) : (
+        <div className="note-list">
+          {notes.map((note) => (
+            <NotesItem key={note.id} id={note.id} action={setNotes} {...note} />
+          ))}
+        </div>
+      )}
     </div>
   );
-}
+};
 
 export default NotesList;

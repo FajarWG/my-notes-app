@@ -1,8 +1,8 @@
 import React from "react";
 
-const ArchiveButton = ({ id, onArchive }) => {
+const ArchiveButton = ({ onArchive }) => {
   return (
-    <button className="btn-archive" onClick={() => onArchive(id)}>
+    <button className="btn-archive" onClick={onArchive}>
       Archive
     </button>
   );

@@ -5,7 +5,7 @@ const NotesList = ({ setNotes, notes }) => {
   return (
     <div>
       {notes.length === 0 ? (
-        <p style={{ textAlign: "center" }}>Tidak ada catatan.</p>
+        <p style={{ textAlign: "center" }}>No note.</p>
       ) : (
         <div className="note-list">
           {notes.map((note) => (

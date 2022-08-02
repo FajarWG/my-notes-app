@@ -1,3 +1,8 @@
+# My Notes App
+
+This project to complete the submission Dicoding task.
+Modal : (https://codepen.io/timothylong/pen/AJxrPR)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

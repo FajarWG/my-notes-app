@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import NotesInput from "./components/NotesInput";
 import NotesList from "./components/NotesList";
 import NotesSearch from "./components/NotesSearch";
